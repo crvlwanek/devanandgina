@@ -1,19 +1,24 @@
 import * as React from "react";
+
 import Layout from "../components/Layout";
+import Navbar from "../components/Navbar";
 import LandingSection from "../components/LandingSection";
 import ScheduleSection from "../components/ScheduleSection";
+import TravelSection from "../components/TravelSection";
 import Footer from "../components/Footer";
 
 import { setViewHeight } from "../utils/setViewHeight";
 
-import data from "../data.json";
-import TravelSection from "../components/TravelSection";
+import data from "../data.js";
 
 setViewHeight();
+
+const rightMenu = data.navitems;
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Navbar rightMenu={rightMenu} />
       <LandingSection
         groom_name={data.groom_name}
         bride_name={data.bride_name}

@@ -31,6 +31,139 @@ body {
   width: auto;
 }
 
+/* <NavBar.jsx> */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap");
+
+:root {
+  --navbar__max-width: 1100px;
+  --navbar__header-font: "Montserrat", sans-serif;
+  --navbar__link-font: "Roboto", sans-serif;
+}
+
+.navbar__holder {
+  color: white;
+  position: fixed;
+  width: 100%;
+  transition: 0.2s cubic-bezier(0.25, 0.1, 0.6, 0.54);
+  z-index: 2;
+}
+
+.navbar__nav-scroll {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.navbar__nav-top {
+  background-color: transparent;
+  border-color: white;
+}
+
+.navbar__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--navbar__max-width);
+  padding: 10px 17px;
+}
+
+.navbar__left-menu,
+.navbar__right-menu {
+  display: none;
+  width: 33.33%;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__left_list {
+  justify-content: flex-start;
+}
+
+.navbar__right-list {
+  justify-content: flex-end;
+}
+
+.navbar__list-item {
+  display: inline-block;
+}
+
+.navbar__list-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: inherit;
+  font-family: var(--navbar__link-font);
+  font-size: 0.9rem;
+  margin: 0 15px;
+  outline: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  transition: border-color 0.4s ease;
+  white-space: nowrap;
+}
+
+.navbar__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar__list-link:hover {
+  border-bottom: 1px solid;
+  filter: brightness(85%);
+  transition: border-bottom 0.2s ease;
+}
+
+.navbar__logo-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar__logo:hover {
+  filter: brightness(85%);
+}
+
+.navbar__logo {
+  color: inherit;
+  font-family: var(--navbar__header-font);
+  margin: 0;
+  transition: ease-in-out 0.2;
+}
+
+.navbar__mobile {
+  display: block;
+}
+
+.navbar__hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+}
+
+@media (min-width: 1025px) {
+  .navbar__wrapper {
+    padding: 15px 25px;
+  }
+  .navbar__left-menu,
+  .navbar__right-menu {
+    display: block;
+  }
+  .navbar__mobile {
+    display: none;
+  }
+}
+
+/* </NavBar.jsx */
+
 /* ------------ <LandingSection.js> ------------ */
 
 .hero {
@@ -50,7 +183,7 @@ body {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url(../images/wedding_venue.jpg);
+    url(../images/wedding_venue_splash.jpg);
   padding: 5px;
 }
 
@@ -68,7 +201,7 @@ body {
 
 .avatar {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
-    url(../images/devan_and_gina.jpg);
+    url(../images/couple_avatar_photo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,18 +316,18 @@ div.photo-box {
 }
 
 .photo1 {
-  background-image: url(../images/proposal.jpg);
+  background-image: url(../images/polaroid1.jpg);
   right: 108px;
   transform: rotate(-21deg);
 }
 
 .photo2 {
-  background-image: url(../images/proposal.jpg);
+  background-image: url(../images/polaroid2.jpg);
   z-index: 1;
 }
 
 .photo3 {
-  background-image: url(../images/proposal.jpg);
+  background-image: url(../images/polaroid3.jpg);
   left: 102px;
   transform: rotate(13deg);
 }

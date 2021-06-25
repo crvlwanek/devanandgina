@@ -3,9 +3,18 @@
   "bride_name": "Gina",
   "date": "December 4, 2021",
   "time": "",
-  "location": "Lighthouse Inn On Lake Michigan",
-  "location_link": "https://www.lhinn.com/",
-  "address": "1515 Memorial Dr, Two Rivers, WI",
+  "location": {
+    "name": "Lighthouse Inn On Lake Michigan",
+    "link": "https://www.lhinn.com/",
+    "address": "1515 Memorial Dr, Two Rivers, WI"
+  },
+  "links": {
+    "registry": "https://registry.theknot.com/gina-december-2021-wi/46665664",
+    "transportation_form": "https://docs.google.com/forms/d/1FhN_PC4Ykok6oaRWlfYOsjrMk8TExaG60iwnUM3xnw8/edit",
+    "local_attractions": "https://www.google.com/maps/d/u/0/edit?mid=1Ljo-sgBp03qmthJDTYX9llH2vef1zD7A&usp=sharing",
+    "schedule_graphic": "https://www.canva.com/design/DAEiDOdBsDw/6eDUQxpTHIc5Qyo6V9m_cQ/edit"
+  },
+
   "schedule": [
     {
       "time": "12:00pm",
