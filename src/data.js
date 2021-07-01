@@ -1,6 +1,7 @@
 import data from "./data.json";
 
-const { bride_name, groom_name, location, date, time, links } = data;
+const { bride_name, groom_name, location, date, time, links, attractions } =
+  data;
 
 const values = {
   bride_name,
@@ -8,6 +9,8 @@ const values = {
   location,
   date,
   time,
+  links,
+  attractions,
   navitems: [
     {
       name: "registry",
@@ -18,8 +21,8 @@ const values = {
       link: "#travel",
     },
     {
-      name: "schedule",
-      link: "#schedule",
+      name: "events",
+      link: "#events",
     },
     {
       name: "attractions",
@@ -28,8 +31,8 @@ const values = {
   ],
   splash_buttons: [
     {
-      name: "Travel Info",
-      link: "#travel",
+      name: "Travel Form",
+      link: links.transportation_form,
     },
     {
       name: "Registry",

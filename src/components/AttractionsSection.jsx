@@ -1,10 +1,13 @@
 import * as React from "react";
 
-import data from "../data.json";
+import data from "../data.js";
 
 import { Card } from "./Card";
 
 const styles = {
+  link: {
+    textDecoration: "none",
+  },
   header: {
     color: "rgb(17, 17, 17)",
     textAlign: "center",
@@ -33,10 +36,18 @@ const styles = {
 
 const TravelSection = () => {
   return (
-    <section id="travel" style={{ background: "var(--theme1)" }}>
-      <h1 style={styles.header}>Local Attractions</h1>
+    <section id="attractions" style={{ background: "var(--theme1)" }}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        style={styles.link}
+        href={data.links.local_attractions}
+      >
+        <h1 style={styles.header}>Local Attractions</h1>
+      </a>
+
       <div style={styles.cardHolder}>
-        {data?.travel?.map((item) => (
+        {data?.attractions?.map((item) => (
           <Card
             heading={item.heading}
             bodyText={item.description}

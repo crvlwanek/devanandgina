@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import HamburgerMenu from "./HamburgerMenu";
+
 const NavBar = ({ siteTitle, leftMenu, rightMenu }) => {
   let listener = null;
   const [scrollState, setScrollState] = React.useState("top");
@@ -55,7 +57,8 @@ const NavBar = ({ siteTitle, leftMenu, rightMenu }) => {
                   <a
                     className="navbar__link"
                     href={item.link}
-                    target={item.link[0] == "#" ? "" : "_blank"}
+                    rel="noreferrer"
+                    target={item.link[0] === "#" ? "" : "_blank"}
                   >
                     {item.name}
                   </a>
@@ -65,17 +68,10 @@ const NavBar = ({ siteTitle, leftMenu, rightMenu }) => {
           </ul>
         </nav>
         <div className="navbar__mobile">
-          <span className="navbar__hamburger-menu">
-            {[0, 1, 2].map((_) => (
-              <svg width="30" height="3">
-                <rect
-                  width="30"
-                  height="3"
-                  fill={scrollState === "top" ? "white" : "black"}
-                />
-              </svg>
-            ))}
-          </span>
+          <HamburgerMenu
+            fill={scrollState === "top" ? "white" : "black"}
+            menu={rightMenu}
+          />
         </div>
       </div>
     </div>

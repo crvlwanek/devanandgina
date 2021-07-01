@@ -40,7 +40,6 @@ const textStyles = {
 const buttonStyles = {
   position: "absolute",
   bottom: "10px",
-  right: "0px",
   borderColor: "transparent",
   boxShadow: "",
 };
@@ -60,7 +59,16 @@ export const Card = ({
         <h1 style={headingStyles}>{heading}</h1>
         <p style={textStyles}>{bodyText}</p>
         <Button
-          customStyles={buttonStyles}
+          customStyles={{ ...buttonStyles, right: 0 }}
+          customHover={{ filter: "" }}
+          variant="transparent"
+          theme="primary"
+          href={`https://www.google.com/maps/search/${heading}`}
+        >
+          Google Maps
+        </Button>
+        <Button
+          customStyles={{ ...buttonStyles, left: 0 }}
           customHover={{ filter: "" }}
           variant="transparent"
           theme="primary"

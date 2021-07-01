@@ -42,11 +42,6 @@ const LandingSection = () => {
           spacing={3}
         >
           <Grid item>
-            <Button href={data.splash_buttons[0].link}>
-              {data.splash_buttons[0].name}
-            </Button>
-          </Grid>
-          <Grid item>
             <Button
               component={Link}
               href={data.splash_buttons[1].link}
@@ -55,6 +50,11 @@ const LandingSection = () => {
               color="var(--theme5)"
             >
               {data.splash_buttons[1].name}
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button href={data.splash_buttons[0].link}>
+              {data.splash_buttons[0].name}
             </Button>
           </Grid>
         </Grid>

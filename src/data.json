@@ -14,43 +14,60 @@
     "local_attractions": "https://www.google.com/maps/d/u/0/edit?mid=1Ljo-sgBp03qmthJDTYX9llH2vef1zD7A&usp=sharing",
     "schedule_graphic": "https://www.canva.com/design/DAEiDOdBsDw/6eDUQxpTHIc5Qyo6V9m_cQ/edit"
   },
-
-  "schedule": [
+  "attractions": [
     {
-      "time": "12:00pm",
-      "event": "People arrive"
+      "heading": "Lighthouse Inn On Lake Michigan",
+      "description": "On the banks of Lake Michigan, 1 mile from Downtown, this classic hotel is a 4-minute walk from the Hamilton Wood Type and Printing Museum and 2.3 miles from the Fairview Golf Course.",
+      "link": "https://www.lhinn.com/",
+      "image": "https://i.pinimg.com/originals/0b/95/d6/0b95d616201f64e3daa1b0bb9a0b7ee6.jpg"
     },
     {
-      "time": "1:00pm",
-      "event": "Ceremony"
+      "heading": "Schroeder's Department Store",
+      "description": "Schroeder's is a family owned department store since 1891. Offering alterations, footwear and apparel for men & women. Home of the Red Bank Coffeehouse.",
+      "link": "http://www.schroederstore.com/",
+      "image": "https://www.gannett-cdn.com/-mm-/a712edf572b0ec98394a2da93fb49a6981237c96/c=0-200-3250-2036/local/-/media/2017/12/20/WIGroup/Manitowoc/636494087211299182-MAN-Schroeders-121517-JC0037.jpg?width=3200&height=1808&fit=crop&format=pjpg&auto=webp"
     },
     {
-      "time": "2:00pm",
-      "event": "Photos"
+      "heading": "Fatzo's Sub & Pizza Shop",
+      "description": "Fatzo's is a locally owned and operated Sub and Pizza Shop located in downtown Two Rivers, WI. Opened in 1978, Fatzo's has perfected the art of making sub sandwiches and pizzas.",
+      "link": "https://www.google.com/maps/place/Fatzo's+Sub+%26+Pizza+Shop/@44.1518045,-87.5702958,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x543d111abfff5690!8m2!3d44.1518039!4d-87.5681619",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipNrMIhpd3IY5TI700Bv6F1xVY1gG-os0lgINflv=w408-h306-k-no"
     },
     {
-      "time": "6:00pm",
-      "event": "Reception"
-    }
-  ],
-  "travel": [
-    {
-      "heading": "Hamilton Wood Type Museum",
-      "description": "The Hamilton Wood Type and Printing Museum is the only museum dedicated to the preservation, study, production and printing of wood type. With 1.5 million pieces of wood type and more than 1,000 styles and sizes of patterns, Hamilton’s collection is one of the premier wood type collections in the world.",
-      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
-      "link": "https://woodtype.org/"
+      "heading": "Christina's Cakery and Baked Goods",
+      "description": "Christina’s Cakery & Baked Goods LLC provides a variety of baked goods such as fresh baked breads, buns, cookies, donuts, danish, cakes, cupcakes, pies AND MUCH MORE!",
+      "link": "https://www.facebook.com/Christinas-Cakery-Baked-Goods-LLC-108931460750623/",
+      "image": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAap_uEB9bMJmqJihN6SERcZNX8RXyg_vkZmF0RiDruZcjDGBKEtkCcvk2OEM5ptLo9d28vOUIwrPVjyRo7-HpNjUQ6kPxOUVTXTZY3taNp3zf01lOqapE5IA7mu5mzffDQHjFRsGbJ0ezbPWdrvI4vaiL1Xs1efTyk0GFrIlCqVsEEOVEYK9&4u16383&5m1&2e1&callback=none&client=google-maps-pro&token=56493"
     },
     {
-      "heading": "Hamilton Wood Type Museum",
+      "heading": "Hamilton Wood Type & Printing Museum",
+      "description": "Welcome to Hamilton. Here, you can visit the world’s largest collection of type. Tour the type making equipment, take part in a class or event. Print from the museum’s vast collection. View our gallery’s current exhibit. Learn about typography and the rich history of American printing. Buy a print or a piece of newly cut type in our store. Interested? Come on in.",
+      "link": "https://woodtype.org/",
+      "image": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAap_uEAJGqJl6x918OXmCDyZA2d3_QvNtu6Ka7bH34k2YRouXmaNZRLNagvGC-tP_hFwo73iYW9eEp-bliOkDN9xZWG5qQ7xEPpoBtC61i0Byrq0yjR8FkW-SiU9KcYVxMMuS3sEdb1Cdx4x5yNI0SVMsXTf0tcdOBZ1NCrwEYsVNVP6r-Um&4u16383&5m1&2e1&callback=none&client=google-maps-pro&token=10141"
+    },
+    {
+      "heading": "Two Rivers History Museum",
       "description": "",
-      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
-      "link": "https://woodtype.org/"
+      "link": "https://www.google.com/maps/place/Two+Rivers+History+Museum/@44.1501081,-87.5666918,17z/data=!4m12!1m6!3m5!1s0x0:0x5e649a6625526cfb!2sTwo+Rivers+History+Museum!8m2!3d44.1500945!4d-87.5668613!3m4!1s0x0:0x5e649a6625526cfb!8m2!3d44.1500945!4d-87.5668613",
+      "image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=oK7f4GliV0NBJqlFHbXk8w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=245.84239&pitch=0&thumbfov=100"
     },
     {
-      "heading": "Hamilton Wood Type Museum",
-      "description": "",
-      "image": "https://derwombatdotnet.files.wordpress.com/2013/07/hwt_museuminterior.png",
-      "link": "https://woodtype.org/"
+      "heading": "Washington House",
+      "description": "This warm 1850’s former inn serves as the Two Rivers Visitor Center. The old-time non-alcoholic saloon features Berners’ Ice Cream Parlor, commemorating the invention of the ice cream sundae here in 1881. Explore five museum rooms including rare murals in the upstairs ballroom.",
+      "link": "https://www.tworivers-history.org/historic-washington-house/",
+      "image": "https://www.tworivers-history.org/wp-content/uploads/2020/05/two_rivers_washington_house_exterior.jpg"
+    },
+    {
+      "heading": "Point Beach State Forest",
+      "description": "Point Beach State Forest features 3,000 acres of land and 6 miles of sandy beach along the shores of Lake Michigan. Point Beach offers family campsites, two large group cabins and an outdoor group camp. A popular feature within the property is the Rawley Point Lighthouse, which has been operated and maintained by the U.S. Coast Guard since 1853.",
+      "link": "https://dnr.wisconsin.gov/topic/parks/pointbeach",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/PointBeachStateForestSign.jpg/1200px-PointBeachStateForestSign.jpg"
+    },
+    {
+      "heading": "St. Peter the Fisherman Catholic Parish",
+      "description": "We are a Eucharistic community of faith who is caring, generous and committed to our Catholic tradition and we strive to increase our faith in God through Jesus Christ and strengthen our Catholic faith through the Liturgical experience, faith formation, and opportunities to build community.",
+      "link": "https://www.spfcp.org/",
+      "image": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAap_uECSDRlFwPwSXUE8EB-BJRrHedQWJh0FC0M7s8G5peB9UylWJFbKBzp8e3ZKOcYgLw46-cLHhkYQxA_Wolp5eOASqzhEJHNxCtBlFNbX3a4cIRG4SLy0aJtuKkRHHGTe09KC93nd7OlNlu30sxbY9Ja4nUfdE069E1cbosC364hdGQIr&4u16383&5m1&2e1&callback=none&client=google-maps-pro&token=129921"
     }
   ]
 }
