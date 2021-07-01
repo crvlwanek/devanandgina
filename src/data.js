@@ -20,10 +20,7 @@ const values = {
       name: "travel",
       link: "#travel",
     },
-    {
-      name: "events",
-      link: "#events",
-    },
+
     {
       name: "attractions",
       link: "#attractions",

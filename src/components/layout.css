@@ -21,6 +21,10 @@
   --photo-box: calc(var(--photo-size) + var(--photo-border) * 2);
 
   --button__font: "Roboto", sans-serif;
+
+  --MKE-airport-image: url(https://assets.visitmilwaukee.org/visitmke/media/global/Partner%20Images/Gallery%20Size/VM-GeneralMitchellInternationalAirport-Terminals.jpg?ext=.jpg&mode=crop&width=1920&height=1080&scale=both);
+  --Lighthouse-Inn-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/7068477.jpg?k=2449d7405e09d8a17c7dc0ce70f460b160da1d27ba492e14f417ff02c46d6ae7&o=&hp=1);
+  --St-Peter-image: url(https://www.liturgicalenvironments.com/Images/Leaded%20Glass%20Contemporary/2-rivSt-Peters-Environment.jpg);
 }
 
 html {
@@ -159,7 +163,7 @@ body {
 
 .navbar__mobile-menu {
   background-color: var(--mobile-menu-color);
-  width: 60%;
+  width: 20rem;
   height: 100%;
   position: fixed;
   top: 0;
@@ -315,20 +319,74 @@ div.MuiContainer-root {
 
 /* ------------ <ScheduleSection.js> ------------ */
 
-.schedule {
-  background-image: url(../images/schedule.png);
-  height: 960px;
-  width: 400px;
-  background-position: center top;
+.schedule__image-box {
+  box-shadow: var(--box-shadow);
+}
+
+.schedule__flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.schedule__grid {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  width: min(900px, 90%);
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.schedule__MKE-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    var(--MKE-airport-image);
+  height: 290px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
-  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule__Lighthouse_Inn-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    var(--Lighthouse-Inn-image);
+  height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule__St-Peter-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    var(--St-Peter-image);
+  height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule {
+  background: url(../images/schedule.png), white;
+  width: min(100%, 300px);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
   box-shadow: 0px 1px 2px rgb(117, 117, 117);
-  margin-top: 50px;
-  border: 30px solid white;
-  border-left-width: 40px;
-  border-right-width: 40px;
+  padding-top: 133.05%;
+  justify-self: end;
+  height: 270px;
 }
 
 .schedule-row {
@@ -337,17 +395,26 @@ div.MuiContainer-root {
 }
 
 .schedule__travel-link {
-  height: 125px;
+  height: 100px;
   width: 100%;
-  margin-top: 80px;
+  position: relative;
+  top: -400px;
 }
 
 .schedule__travel-link:hover {
   background-color: #6666663d;
 }
 
-.schedule__events {
-  margin-top: 270px;
+@media (max-width: 690px) {
+  .schedule__image-box {
+    display: none;
+  }
+  .schedule__grid {
+    grid-template-columns: 1fr;
+  }
+  .schedule {
+    justify-self: center;
+  }
 }
 
 /* ------------ <Schedule.js> ------------ */
@@ -379,7 +446,7 @@ div.MuiContainer-root {
 
 div.photo-box {
   height: 300px;
-  margin: 200px 0 225px;
+  margin: 120px 0 200px;
 }
 
 .box {
